@@ -1,5 +1,9 @@
 # PancakeSwap Subgraph
 
+## 设置config/[network].js
+
+一定要在`/config/arbitrum-goerli.js`设置好合约地址和startBlock，然后`cd subgraphs/exchange-v3/template`，运行`NETWORK=arbitrum-goerli yarn template`，再`yarn codegen && yarn build && yarn deploy:arbGoerli`
+
 TheGraph exposes a GraphQL endpoint to query the events and entities within the Binance Smart Chain and PancakeSwap ecosystem.
 
 Currently, there are multiple subgraphs, but additional subgraphs can be added to this repository, following the current architecture.
